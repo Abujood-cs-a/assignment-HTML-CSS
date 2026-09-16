@@ -1,0 +1,2151 @@
+/* ==========================================================================
+   Global Reset & Scrollbar
+========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #03a9f4;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #403f3f;
+}
+
+/* ==========================================================================
+   Assignment 1-4
+ ========================================================================== */
+
+/* ==========================================================================
+   Assignment 5-8
+   ========================================================================== */
+
+/* --- Assignment 1: background-color basics --- */
+.div {
+    color: white;
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.assign-1-shape-1 {
+    background-color: blueviolet;
+}
+
+.assign-1-shape-2 {
+    background-color: #c495f0;
+}
+
+.assign-1-shape-3 {
+    background-color: #f3e9fc;
+}
+
+@media (max-width: 767px) {
+    .div {
+        width: 99%;
+    }
+}
+
+/* --- Assignment 2: background-repeat --- */
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.div1,
+.div2,
+.div3 {
+    background-color: #eeeeee;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.assign-2-shape-1,
+.assign-2-shape-2,
+.assign-2-shape-3,
+.assign-2-shape-4,
+.assign-3-shape-1,
+.assign-3-shape-2,
+.assign-3-shape-3,
+.assign-3-shape-4,
+.assign-4-shape-1,
+.assign-4-shape-2,
+.assign-4-shape-3,
+.assign-4-shape-4 {
+    background-image: url("https://elzero.org/wp-content/uploads/2021/02/css-assignment-5-8.png");
+    padding: 20px;
+    color: white;
+}
+
+.assign-2-shape-1 {
+    background-repeat: no-repeat;
+}
+
+.assign-2-shape-2 {
+    background-repeat: repeat-y;
+}
+
+.assign-2-shape-3 {
+    background-repeat: repeat-x;
+}
+
+.assign-2-shape-4 {
+    background-repeat: repeat;
+}
+
+/* --- Assignment 3: background-position --- */
+.assign-3-shape-1 {
+    background-repeat: no-repeat;
+}
+
+.assign-3-shape-2 {
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.assign-3-shape-3 {
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+/* --- Assignment 4: background-size --- */
+.assign-4-shape-1 {
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.assign-4-shape-2 {
+    background-repeat: repeat-y;
+    background-size: 80%;
+    background-position: right top;
+}
+
+.assign-4-shape-3 {
+    background-repeat: repeat-x;
+    background-size: 80%;
+    background-position: bottom left;
+}
+
+.assign-4-shape-4 {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/* ==========================================================================
+   Assignment 9-12
+   ========================================================================== */
+
+/* --- Assignment 1: border & outline --- */
+.parent1 {
+    display: flex;
+    align-items: center;
+}
+
+.parent1 .div-1,
+.parent1 .div-2,
+.parent1 .div-3 {
+    background-color: #d4d4d4;
+    padding: 40px;
+    margin: 40px;
+    font-size: 30px;
+}
+
+.parent1 .div-1 {
+    border: solid 10px red;
+    outline: solid 10px black;
+}
+
+.parent1 .div-2 {
+    border: solid 10px;
+    border-color: blue green;
+    outline: solid 10px black;
+}
+
+.parent1 .div-3 {
+    border: dashed 10px;
+    border-color: red green blue yellow;
+    outline: solid 10px black;
+}
+
+@media (max-width: 767px) {
+    .parent1 {
+        display: inline;
+    }
+}
+
+/* --- Assignment 2: visibility --- */
+.elements {
+    margin: 20px 40px;
+    padding: 15px;
+}
+
+.element-1 {
+    border-left: solid 10px #e91e63;
+    outline: solid 10px #eeeeee;
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border-left: solid 10px #009688;
+    outline: solid 10px #eeeeee;
+}
+
+@media (max-width: 767px) {
+    .elements {
+        margin-left: 10px;
+        width: 90% !important;
+    }
+}
+
+/* ==========================================================================
+   Assignment 13-16
+   ========================================================================== */
+
+/* --- Assignment 1: selector specificity --- */
+.parent-1 .child .title {
+    color: red;
+}
+
+.parent-1 .title {
+    color: blue;
+}
+
+.parent-1 p {
+    color: green;
+}
+
+.title {
+    color: green;
+}
+
+/* --- Assignment 2: text truncation with max-height --- */
+.div4 {
+    background-color: #a52a2a;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 110px;
+    font-size: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+/* ==========================================================================
+   Assignment 17-21
+   ========================================================================== */
+
+/* --- Assignment 1: text-shadow --- */
+.shadow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    text-shadow:
+        2px -2px 2px red,
+        -2px -1px 0 blue;
+}
+
+/* --- Assignment 2: text-transform --- */
+.para {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto 30px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+
+/* --- Assignment 3: overflow & text-overflow --- */
+.div5,
+.div6,
+.div7 {
+    background-color: #eee;
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.div7 {
+    font-size: 19.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 767px) {
+    .div5,
+    .div6,
+    .div7,
+    .div8 {
+        width: 100% !important;
+    }
+}
+
+/* --- Assignment 4: button link with transition --- */
+.a1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #009688;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px 30px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-bottom: 10px #00514a solid;
+    transition: 1s;
+}
+
+.a1:hover {
+    background-color: #00514a;
+    border-bottom: 10px #009688 solid;
+}
+
+/* ==========================================================================
+   Assignment 22-26
+   ========================================================================== */
+
+/* --- Assignment 1: the inherit keyword --- */
+.div8 {
+    margin: 30px auto;
+    border: solid 5px #ff5722;
+    padding: 20px;
+    width: 500px;
+}
+
+.div8 p {
+    background-color: #dddddd;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: inherit;
+    border: inherit;
+}
+
+/* --- Assignment 3: rem units & custom fonts --- */
+:root {
+    font-size: 20px;
+}
+
+.one-1,
+.two-2,
+.three-3 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.one-1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+}
+
+.two-2 {
+    font-family: "Cairo", sans-serif;
+    font-size: 2rem;
+}
+
+.three-3 {
+    font-family: "Jomhuria", serif;
+    font-size: 1.5rem;
+}
+
+/* ==========================================================================
+   Assignment 27-29
+   ========================================================================== */
+
+/* --- Assignment 1: flex-grow layout --- */
+.container {
+    background-color: #eee;
+    width: 800px;
+    margin: 40px auto;
+    padding: 15px 15px 15px 0;
+}
+
+.container div {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+    text-align: center;
+}
+
+.container .full-width {
+    background-color: #ddd;
+    font-weight: bold;
+    font-size: 20px;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    margin-top: 15px;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div {
+    box-sizing: border-box;
+    background-color: #ddd;
+    flex: 1;
+    margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* --- Assignment 2: opacity --- */
+.div9 {
+    background-color: #b3b3b3;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.on {
+    opacity: 0.5;
+}
+
+.tw {
+    opacity: 0.1;
+}
+
+/* ==========================================================================
+   Assignment 30-33
+   ========================================================================== */
+
+/* --- Assignment 1: position + z-index --- */
+.green-1,
+.red-1,
+.blue-1,
+.black-1-1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green-1 {
+    background-color: #009688;
+    left: 40px;
+    top: 40px;
+    z-index: 2;
+}
+
+.red-1 {
+    background-color: #f44336;
+    left: 60px;
+    top: 60px;
+    z-index: 3;
+}
+
+.blue-1 {
+    background-color: #03a9f4;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+
+.black-1-1 {
+    background-color: black;
+    left: 20px;
+    top: 40px;
+    z-index: -1;
+}
+
+/* --- Assignment 2: corner ribbons on a note box --- */
+.th {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 50px auto;
+    width: 600px;
+    line-height: 1.6;
+    font-size: 22px;
+    border: solid 5px;
+    border-color: #f44336 #2196f3;
+    position: relative;
+}
+
+.th span {
+    display: block;
+    color: white;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 2;
+}
+
+.top-left {
+    background-color: #2196f3;
+    top: -20px;
+    left: -25px;
+    border-right: solid 5px #f44336;
+}
+
+.top-right {
+    background-color: #2196f3;
+    top: -20px;
+    right: -25px;
+    border-left: solid 5px #f44336;
+}
+
+.bottom-left {
+    background-color: #2196f3;
+    bottom: -20px;
+    left: -25px;
+    border-right: solid 5px #f44336;
+}
+
+.bottom-right {
+    background-color: #2196f3;
+    bottom: -20px;
+    right: -25px;
+    border-left: solid 5px #f44336;
+}
+
+@media (max-width: 767px) {
+    .th {
+        width: 90%;
+    }
+}
+
+/* --- Assignment 3: nested ordered/unordered lists --- */
+ul {
+    width: 400px;
+    margin: 20px auto;
+}
+
+ul .html,
+ul .css,
+ul .js {
+    background-color: #ddd;
+    padding: 40px;
+    margin-bottom: 20px;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+ul .html ol li,
+ul .css ol li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-position: outside;
+}
+
+ul .css ol {
+    list-style-type: upper-roman;
+}
+
+ul .js ul li {
+    background-color: white;
+    width: 320px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    ul {
+        width: 100%;
+    }
+
+    ul .js ul li {
+        width: 100%;
+    }
+}
+
+/* --- Assignment 4: table with rowspan / thead / tfoot --- */
+table {
+    border-spacing: 0;
+    margin: 40px auto;
+    border-bottom: solid 3px #0e9c8f;
+}
+
+table th,
+table td {
+    padding: 20px;
+    border: solid white 1px;
+}
+
+table tr td {
+    background-color: #eeeeee;
+}
+
+table thead tr th {
+    background-color: #404040;
+    color: white;
+    text-align: center;
+}
+
+table tr th img,
+table tr td img {
+    width: 100px;
+}
+
+button {
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.view {
+    background-color: #03a9f4;
+}
+
+.view:hover {
+    background-color: white;
+    color: #03a9f4;
+}
+
+.delete {
+    background-color: #e91e63;
+}
+
+.delete:hover {
+    background-color: white;
+    color: #e91e63;
+}
+
+@media (max-width: 767px) {
+    table tr th,
+    table tr td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    table tr td img {
+        width: 30px !important;
+        height: 30px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+}
+
+/* ==========================================================================
+   Assignment 34-37
+   ========================================================================== */
+
+/* --- Assignment 1: ::before overlay --- */
+.One,
+.Two,
+.Three {
+    background-color: #eeeeee;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.Two {
+    position: relative;
+}
+
+.Two::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* --- Assignment 2: ::first-letter drop cap --- */
+.ass-2 {
+    background-color: #d4d4d4;
+    width: 400px;
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 3;
+}
+
+.ass-2::first-letter {
+    background-color: red;
+    color: white;
+    display: block;
+    margin-right: 30px;
+    margin-left: -17px;
+    padding: 20px 10px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .ass-2 {
+        max-width: 100%;
+    }
+}
+
+/* --- Assignment 3: speech-bubble comment with data attribute --- */
+.para-1 {
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #e91e63;
+    position: relative;
+}
+
+.para-1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -25px;
+    top: 50%;
+    margin-top: -10px;
+    border: solid 10px;
+    border-color: transparent #e91e63 transparent transparent;
+    font-weight: 300;
+}
+
+.para-1::after {
+    content: attr(data-person);
+    position: absolute;
+    background-color: #eeeeee;
+    left: -150px;
+    top: 0;
+    width: 70px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+@media (max-width: 767px) {
+    .para-1 {
+        width: 90%;
+    }
+}
+
+/* --- Assignment 4: CSS counters on product titles --- */
+.para-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+    width: 600px;
+    padding: 20px;
+    margin: 30px auto 20px;
+    position: relative;
+    counter-increment: counter-increment;
+}
+
+.para-2::before {
+    content: "";
+    position: absolute;
+    background-color: #f44336;
+    width: 5px;
+    height: 100%;
+    right: -5px;
+    top: 0;
+}
+
+.para-2::after {
+    content: counter(counter-increment);
+    position: absolute;
+    background-color: #f44336;
+    color: white;
+    width: 70px;
+    height: 100%;
+    left: -71px;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .para-2 {
+        width: 90%;
+    }
+}
+
+/* ==========================================================================
+   Assignment 38-41
+   ========================================================================== */
+
+/* --- Assignment 1: layered box-shadow circle with counter --- */
+.div10 {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 200px;
+    margin: 50px 20px;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow:
+        -9px -9px 0px 0px #e91e63,
+        9px 9px 0 0 #2196f3;
+    position: relative;
+    counter-increment: counter;
+}
+
+.div10::before {
+    content: counter(counter);
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div10::after {
+    content: "Element";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Assignment 2: inset shadow + asymmetric border-radius --- */
+.circle {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 0 100px 0 100px;
+    box-shadow: inset 0 0 20px 5px #979797;
+}
+
+/* --- Assignment 3: "or" divider between two pricing boxes --- */
+.parent-2 {
+    width: 550px;
+    margin: 20px auto;
+    display: flex;
+    position: relative;
+}
+
+.parent-2::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: #03a9f4;
+    transform: translate(-50%);
+}
+
+.parent-2::after {
+    content: "Or";
+    position: absolute;
+    background-color: #03a9f4;
+    color: white;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent-2 .box-1 {
+    margin-right: 50px;
+}
+
+.parent-2 .box-1,
+.parent-2 .box-2 {
+    background-color: #eee;
+    width: 250px;
+    padding: 20px;
+}
+
+.parent-2 .box-1 h1,
+.parent-2 .box-2 h1 {
+    background-color: #03a9f4;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.parent-2 .box-1 p,
+.parent-2 .box-2 p {
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .parent-2 {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .parent-2::before,
+    .parent-2::after {
+        display: none;
+    }
+
+    .parent-2 .box-1 {
+        margin-bottom: 30px;
+    }
+}
+
+/* ==========================================================================
+   Assignment 42-45
+   ========================================================================== */
+
+/* --- Assignment 1: hover transition timing --- */
+.parent-3 {
+    background-color: #eee;
+    padding: 20px;
+    margin: 30px auto;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+    transition: 1s 1s;
+}
+
+.parent-3:hover {
+    margin-top: 40px;
+}
+
+.parent-3 p:last-child {
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.parent-3:hover p:last-child {
+    margin-top: 40px;
+}
+
+/* --- Assignment 2: overriding inline styles with !important --- */
+.div11 {
+    background-color: #eee !important;
+    width: 400px;
+    margin: 20px auto;
+    font-size: 20px !important;
+    border: none !important;
+    color: black !important;
+    position: relative;
+}
+
+.div11::before {
+    content: "Elzero";
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .div11 {
+        width: 100%;
+    }
+}
+
+/* --- Assignment 3: CSS custom properties (variables) --- */
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+.Element {
+    border: solid 5px var(--mainColor, black);
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    width: 500px;
+    margin: 30px auto;
+}
+
+@media (max-width: 767px) {
+    .Element {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Assignment 46-53
+   ========================================================================== */
+
+/* --- Assignment 1: overlapping circles logo --- */
+.elzero {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    color: #ff5722;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.elzero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    top: 0;
+    border-radius: 50%;
+    background-color: #ff5722;
+    z-index: -1;
+}
+
+.elzero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 10px;
+    top: 0;
+    border-radius: 50%;
+    background-color: #03a9f4;
+    z-index: -1;
+}
+
+/* --- Assignment 2: flex-wrap with calculated widths --- */
+/*
+    Content width is 100%.
+    4 gaps * 15px each = space taken by margins between the 3 items.
+    Each item's width is calculated as (100% - total gaps) / 3.
+*/
+.parent-4 {
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.parent-4 div {
+    background-color: #f44336;
+    color: white;
+    width: calc((100% - 60px) / 3);
+    height: 50px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Assignment 3: order & align-self --- */
+.parent-5 {
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.parent-5 div {
+    background-color: #607d8b;
+    color: white;
+    width: calc(90% / 3);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-5 .one {
+    order: 6;
+    align-self: flex-end;
+}
+
+.parent-5 .two {
+    order: 5;
+}
+
+.parent-5 .three {
+    order: 2;
+    align-self: flex-start;
+}
+
+.parent-5 .four {
+    order: 3;
+}
+
+.parent-5 .five {
+    order: 4;
+}
+
+.parent-5 .six {
+    order: 1;
+}
+
+/* --- Assignment 4: column-direction flex with align-self --- */
+.parent-6 {
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.parent-6 div {
+    background-color: #009688;
+    color: white;
+    height: calc(100% / 3);
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-6 .one {
+    width: 50px;
+    align-self: flex-end;
+}
+
+.parent-6 .two {
+    width: 300px;
+    align-self: flex-start;
+}
+
+.parent-6 .three {
+    width: 50px;
+    align-self: flex-end;
+}
+
+/* --- Assignment 5: order + align-self combined --- */
+.parent-7 {
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.parent-7 div {
+    color: white;
+    width: calc(75% / 4);
+    height: calc(100% / 2);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-7 .one {
+    background-color: #ff9800;
+    order: 2;
+}
+
+.parent-7 .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+
+.parent-7 .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.parent-7 .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+
+@media (max-width: 767px) {
+    .parent-3,
+    .parent-4,
+    .parent-5,
+    .parent-6,
+    .parent-7 {
+        width: 90%;
+    }
+}
+
+/* --- Assignment 6: header / content+sidebar / footer page layout --- */
+.page {
+    background-color: #eee;
+    padding: 0 10px 10px;
+}
+
+.page .header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.page .header .logo {
+    background-color: #ddd;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.page .header .links {
+    background-color: #ddd;
+    flex: 1;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page .header .links li {
+    margin-left: 30px;
+}
+
+.page .main-area {
+    height: calc(100vh - 156.66px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .main-area .content {
+    background-color: #ddd;
+    width: calc(70% - 20px);
+    padding: 10px;
+}
+
+.page .main-area .sidebar {
+    background-color: #ddd;
+    width: 30%;
+    padding: 10px;
+}
+
+.page .footer {
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .page .header .links {
+        width: 70%;
+    }
+}
+
+/* ==========================================================================
+   Assignment 54-56
+   ========================================================================== */
+
+/* --- Assignment 1: striped gradient bars --- */
+.gradient {
+    background-color: #eeeeee;
+    width: 600px;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    border-left: #f44336 solid 10px;
+    border-right: #673ab7 solid 10px;
+    position: relative;
+}
+
+.gradient::first-letter {
+    color: #f44336;
+}
+
+.gradient::before,
+.gradient::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    background-image: linear-gradient(
+        to right,
+        #f44336 0%,
+        #f44336 20%,
+        #2196f3 20%,
+        #2196f3 40%,
+        #4caf50 40%,
+        #4caf50 60%,
+        #e91e63 60%,
+        #e91e63 80%,
+        #673ab7 80%,
+        #673ab7 100%
+    );
+}
+
+.gradient::before {
+    top: 0;
+}
+
+.gradient::after {
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .gradient {
+        width: 100%;
+    }
+}
+
+/* --- Assignment 2: two-tone underline form inputs --- */
+.form {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.form div {
+    position: relative;
+}
+
+.form div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to right,
+        #f5564a 0%,
+        #f5564a 50%,
+        #009688 50%
+    );
+}
+
+.form form .one input,
+.form form .two input,
+.form form .three input {
+    background-color: #eee;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    caret-color: #f44336;
+    color: #f44336;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .form {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Assignment 57-64
+   ========================================================================== */
+
+/* --- Assignment 1: basic CSS Grid with counters --- */
+.grid {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 30px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
+}
+
+.grid div {
+    background-color: #607d8b;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    counter-increment: counter1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div::before {
+    content: "Element";
+}
+
+.grid div::after {
+    content: counter(counter1);
+    margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+    .grid {
+        width: 100%;
+    }
+}
+
+/* --- Assignment 2: header / section / aside / footer grid layout --- */
+.layout {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.layout header {
+    background-color: #03a9f4;
+    padding: 10px;
+    height: 50px;
+    grid-column: 1 / 12;
+}
+
+.layout section {
+    background-color: #ff5722;
+    padding: 10px;
+    height: calc(100vh - 100px);
+    grid-column: 1 / 8;
+}
+
+.layout aside {
+    background-color: #607d8b;
+    padding: 10px;
+    grid-column: 8 / 12;
+}
+
+.layout footer {
+    background-color: #009688;
+    height: 50px;
+    padding: 10px;
+    grid-column: 1 / 12;
+}
+
+@media (max-width: 767px) {
+    .layout {
+        display: block;
+    }
+
+    .layout section {
+        height: calc(100vh - 150px);
+    }
+}
+
+/* --- Assignment 3: grid-template-columns with auto/fr mix --- */
+.grid-1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 30px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+}
+
+.grid-1 div {
+    background-color: #403f3f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Assignment 4: grid-area placements --- */
+.grid-2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 40px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.grid-2 div {
+    background-color: #2196f3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-2 .one {
+    grid-area: 6 / 1 / 8 / 12;
+}
+
+.grid-2 .two {
+    grid-area: 2 / 1 / 2 / 8;
+}
+
+.grid-2 .three {
+    grid-area: 2 / 8 / 2 / 12;
+}
+
+.grid-2 .four {
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+.grid-2 .five {
+    grid-area: 3 / 4 / 6 / 12;
+}
+
+.grid-2 .six {
+    grid-area: 4 / 1 / 4 / 4;
+}
+
+.grid-2 .seven {
+    grid-area: 5 / 1 / 6 / 4;
+}
+
+.grid-2 .eight {
+    grid-area: 1 / 1 / 1 / 12;
+}
+
+/* --- Assignment 5: flex-wrap with align-content --- */
+.grid-3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.grid-3 div {
+    background-color: #e91e63;
+    color: white;
+    width: calc((100% - 20px) / 2);
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        width: 100%;
+    }
+}
+
+/* --- Assignment 6: team/profile card grid --- */
+.cou {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.container-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.container-4 .a {
+    grid-column: 1 / 3;
+}
+
+.container-4 .c {
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+}
+
+.container-4 .d {
+    grid-row: 2 / 4;
+}
+
+.container-4 .e {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.container-4 .f {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+.container-4 .box-3 {
+    padding: 20px;
+}
+
+.container-4 .white-2 {
+    background-color: white;
+    border-bottom: solid 2px red;
+}
+
+.container-4 .black-2 {
+    background-color: black;
+    color: white;
+    border-bottom: solid 2px red;
+}
+
+.container-4 .box-3 h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.container-4 .box-3 h2 {
+    color: #a3a6a5 !important;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container-4 .box-3 .bold {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container-4 .box-3 .normal {
+    color: #a7aeac;
+}
+
+@media (max-width: 991px) {
+    .container-4 .a {
+        grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .container-4 .b {
+        grid-area: 2 / 1 / 3 / 5;
+    }
+
+    .container-4 .c {
+        grid-area: 3 / 1 / 4 / 5;
+    }
+
+    .container-4 .d {
+        grid-area: 4 / 1 / 5 / 5;
+    }
+
+    .container-4 .e {
+        grid-area: 5 / 1 / 6 / 5;
+    }
+
+    .container-4 .f {
+        grid-area: 6 / 1 / 7 / 5;
+    }
+
+    .container-4 .g {
+        grid-area: 7 / 1 / 8 / 5;
+    }
+}
+
+/* ==========================================================================
+   Assignment 65-67
+   ========================================================================== */
+
+/* --- Assignment 1: rotated layered rectangles --- */
+.Elzero-1 {
+    background-color: #eeeeee;
+    width: 300px;
+    height: 200px;
+    margin: 40px auto;
+    color: #03a9f4;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Elzero-1::before {
+    content: "";
+    background-color: #03a9f4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: rotate(-8deg);
+}
+
+.Elzero-1::after {
+    content: "";
+    background-color: #e91e63;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    transform: rotate(8deg);
+}
+
+/* --- Assignment 2: spinning double-ring circle on hover --- */
+.Elzero-2 {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Elzero-2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 10px;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Elzero-2::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border: solid 10px;
+    border-color: #03a9f4 transparent #03a9f4 #03a9f4;
+    border-radius: 50%;
+    transition: 0.5s 0.5s;
+}
+
+.Elzero-2:hover::before,
+.Elzero-2:hover::after {
+    transform: rotate(360deg);
+}
+
+/* ==========================================================================
+   Assignment 68-73
+   ========================================================================== */
+
+/* --- Assignment 1: skewed background banner --- */
+.headding {
+    background-color: #ff5722;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    margin: 90px auto;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.headding::before,
+.headding::after {
+    content: "";
+    background-color: #ff5722;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.headding::before {
+    transform: skewY(-15deg);
+}
+
+.headding::after {
+    transform: skewY(15deg);
+}
+
+/* --- Assignment 2: skewed side-tab badge --- */
+.headding-1 {
+    background-color: #009688;
+    color: white;
+    width: 150px;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headding-1::before {
+    content: "";
+    position: absolute;
+    background-color: #009688;
+    width: 100%;
+    height: 100%;
+    left: -18px;
+    top: 0;
+    z-index: -1;
+    transform: skewX(25deg);
+}
+
+.headding-1::after {
+    content: "";
+    position: absolute;
+    background-color: #009688;
+    width: 10%;
+    height: 100%;
+    left: -45px;
+    top: 0;
+    z-index: -1;
+    transform: skewX(25deg);
+}
+
+/* --- Assignment 3: ribbon-style label with rotated flag --- */
+.regtangle {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    position: relative;
+}
+
+.regtangle::before {
+    content: "Elzero";
+    background-color: #607d8b;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.regtangle::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 32px;
+    top: -102px;
+    border-bottom: solid 5px white;
+    border-right: solid 5px white;
+    transform: rotate(45deg);
+}
+
+/* --- Assignment 4: 3D flip card --- */
+.div12 {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    perspective: 300px;
+    perspective-origin: right;
+}
+
+.div12 .box {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 1s ease-in;
+}
+
+.div12 .box:hover {
+    transform: rotateY(-180deg);
+}
+
+.div12 .box div {
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div12 .box .front {
+    background-color: #e62264;
+}
+
+.div12 .box .back {
+    background-color: #1692fc;
+    transform: rotateY(180deg);
+}
+
+/* ==========================================================================
+   Assignment 74-77
+   ========================================================================== */
+
+/* --- Assignment 1: triple-ring loading spinner (pause on hover) --- */
+.div13 {
+    width: 100px;
+    height: 100px;
+    margin: 80px auto;
+    border: solid 10px;
+    border-color: #d90e56 #d90e56 #d90e56 transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+    animation: spinner 1s infinite;
+}
+
+.div13:hover {
+    animation-play-state: paused;
+}
+
+.div13::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 10px;
+    border-color: #0a90ff transparent #0a90ff #0a90ff;
+    border-radius: 50%;
+}
+
+.div13::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 10px;
+    border-color: #fca300 #fca300 transparent #fca300;
+    border-radius: 50%;
+}
+
+/* --- Assignment 2: spinner (runs on hover) --- */
+.div14 {
+    width: 100px;
+    height: 100px;
+    margin: 80px auto;
+    border: solid 10px;
+    border-color: #0a90ff #0a90ff #0a90ff transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+    animation: spinner 1s infinite;
+    animation-play-state: paused;
+}
+
+.div14:hover {
+    animation-play-state: running;
+}
+
+.div14::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 10px;
+    border-color: #fca300 transparent #fca300 #fca300;
+    border-radius: 50%;
+}
+
+.div14::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 10px;
+    border-color: black black transparent black;
+    border-radius: 50%;
+}
+
+/* --- Assignment 3: simple spinner span --- */
+.span {
+    background-color: #dbdbe3;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border: solid 10px;
+    border-color: black black black transparent;
+    border-radius: 50%;
+    display: block;
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================================================
+   Assignment 83-85
+   ========================================================================== */
+
+/* --- Assignment 1: print-only styling --- */
+@media print {
+    .assign-one {
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+/* --- Assignment 2: responsive product grid --- */
+.responsive {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.responsive .box-5 {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.responsive .box-5 h2 {
+    color: #06988b;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .responsive {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .responsive .box-5 h2 {
+        color: red;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .responsive .box-5 h2 {
+        color: black;
+    }
+}
